@@ -15,6 +15,11 @@ const routes = [
     component: () => import("../components/Navigatios/Login.vue"),
   },
   {
+    path: "/Register",
+    name: "Register",
+    component: () => import("../components/Navigatios/Register.vue"),
+  },
+  {
     path: "/Home",
     meta: { requiresAuth: true },
     component: () => import("../views/Home.vue"),
